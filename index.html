@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Biografia de Brayan</h1>
+    <p>Quer conhercer <strong>Brayan Alves Dos Santos</strong>?</p>
+    <button id="botaoSim">Sim</button>
+    <button id="botaoNao">Não</button>
+    <br>
+    <br>
+    <img id="imagem" src="brayan.jpg"
+    width="400" alt="Este é o Brayn">
+    <p id="mensagem"></p>
+    
+</body>
+    <script>
+        const botaoS = document.getElementById("botaoSim");
+        const botaoN = document.getElementById("botaoNao");
+        const texto = document.getElementById("mensagem")
+        const imagem = document.getElementById("")
+        botaoS.addEventListener("click", function(){
+            texto.innerHTML = "<p>Brayan Alves Dos Santos nascido em Cascavel, PR em 27 de gosto de 2009</p>";
+        })
+
+        botaoN.addEventListener("click", function(){
+            alert("Então ta fazendo oq aqui???")
+        })
+    </script>
+</html>
