@@ -12,8 +12,6 @@
     <button id="botaoNao">Não</button>
     <br>
     <br>
-    <img id="imagem" src="brayan.jpg"
-    width="400">
     <p id="mensagem"></p>
     
 </body>
@@ -21,9 +19,12 @@
         const botaoS = document.getElementById("botaoSim");
         const botaoN = document.getElementById("botaoNao");
         const texto = document.getElementById("mensagem")
-        const imagem = document.getElementById("")
         botaoS.addEventListener("click", function(){
-            texto.innerHTML = "<p>Brayan Alves Dos Santos nascido em Cascavel, PR em 27 de gosto de 2009,<br> gosta de jogar Jogos como Lol, Valorant e Genshin Impact, gosta de artistas <br> musicais  como Sotam, Link do Zap e Tame Impala gosta de práticar esportes <br> como Vôlei e Corrida ao ar livre, e adora bolo de cenoura.</p>";
+            texto.innerHTML = "<p>Brayan Alves Dos Santos nascido em Cascavel, PR em 27 de gosto de 2009,<br> gosta de: <ul><li>Jogar jogos como Lol, Valorant e Genshin Impact</li><li>Gosta de artistas musicais  como Sotam, Link do Zap e Tame Impala</li><li>Gosta de práticar esportes  como Vôlei e Corrida ao ar livre</li><li>Adora bolo de cenoura.</li></p>";
+            const imagem = document.createElement("img")
+            imagem.src = "brayan.jpg"
+            imagem.width = 400
+            document.body.appendChild(imagem)
         })
 
         botaoN.addEventListener("click", function(){
