@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 </head>
+
 <body>
     <h1>Blog de Brayan</h1>
-    <p>Quer conhercer <strong>Brayan Alves Dos Santos</strong>?</p>
-    <button id="botaoSim">Sim</button>
-    <button id="botaoNao">Não</button>
-    <br>
-    <br>
-    <p id="mensagem"></p>
-    
-</body>
-    <script>
-        const botaoS = document.getElementById("botaoSim");
-        const botaoN = document.getElementById("botaoNao");
-        const texto = document.getElementById("mensagem")
-        botaoS.addEventListener("click", function(){
-            texto.innerHTML = "<p>Brayan Alves Dos Santos nascido em Cascavel, PR em 27 de agosto de 2009,<br> gosta de: <ul><li>Jogar jogos como Lol, Valorant e Genshin Impact</li><li>Gosta de artistas musicais  como Sotam, Link do Zap e Tame Impala</li><li>Gosta de práticar esportes  como Vôlei e Corrida ao ar livre</li><li>Adora bolo de cenoura.</li></p>";
-            const imagem = document.createElement("img")
-            imagem.src = "brayan.jpg"
-            imagem.width = 400
-            document.body.appendChild(imagem)
-        })
 
-        botaoN.addEventListener("click", function(){
-            alert("Então ta fazendo oq aqui???")
-        })
-    </script>
+    <p>Brayan Alves Dos Santos nascido em Cascavel, PR em 27 de agosto de 2009,<br>
+        gosta de:
+    <ul>
+        <li>Jogar jogos como Lol, Valorant e Genshin Impact</li>
+        <li>Gosta de artistas musicais como Sotam, Link do Zap e Tame Impala</li>
+        <li>Gosta de práticar esportes como Vôlei e Corrida ao ar livre</li>
+        <li>Adora bolo de cenoura.</li>
+        </p>
+        <img src="brayan.jpg" width="400">
+
+        <div class="layout">
+            <aside class="barra-lateral">
+                <h3>Destaques</h3>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                </ul>
+            </aside>
+        </div>
+
+        <p id="mensagem"></p>
+        <style>
+            .layout {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .barra-lateral {
+                width: 250px;
+                background-color: #f4f4f4;
+                padding: 15px;
+                border-radius: 8px;
+            }
+        </style>
+</body>
+
 </html>

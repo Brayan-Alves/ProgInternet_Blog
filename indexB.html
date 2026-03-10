@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav">Blog do Brayan</div>
+    </nav>
+
+    <div class="main-layout">
+        <main class="conteudo">
+            <section id="geral">
+                <h2>Visão Geral</h2>
+                <p>Conteúdo sobre o tópico geral...</p>
+            </section>
+
+            <section id="esportes">
+                <h2>Meus Esportes</h2>
+                <p>Eu gosto de futebol e basquete...</p>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <h3>Tópicos</h3>
+            <ul>
+                <li><a href="#geral">Geral</a></li>
+                <li><a href="#hobbies">Hobies</a></li>
+                <ul>
+                    <li><a href="#esporte">Esportes</a></li>
+                    <li><a href="#jogos">Jogos</a></li>
+                </ul>
+                <li><a href="#comidas">Comidas</a></li>
+                <li><a href="#filmeeseries">Filmes e Séries</li>
+            </ul>
+        </aside>
+    </div>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            padding: 1rem 5%;
+        }
+
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            min-height: 80vh;
+        }
+
+        .conteudo {
+            flex: 3;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 3px solid #2c3e50;
+        }
+    </style>
+</body>
+
+</html>
